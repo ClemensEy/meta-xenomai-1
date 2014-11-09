@@ -2,6 +2,7 @@
 RTDM_DRIVERS = " \
     uart-omap \
     i2c-omap \
+    spi-omap \
     capture-radio-omap \
  "
  
