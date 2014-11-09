@@ -32,6 +32,6 @@ do_install () {
 #	install -m 0644 ${WORKDIR}/capture.conf ${D}/etc/modules-load.d/
 }
 
-FILES_${PN} += "${base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/rt/*"
+# FILES_${PN} += "${base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/rt/*"
 #FILES_${PN} += "/etc/modules-load.d/*"
 
