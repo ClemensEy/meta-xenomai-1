@@ -18,7 +18,6 @@ includedir = "/usr/include/xenomai"
 
 do_install_append() {
 	#remove unused files
-	rm -f ${D}${libdir}/posix.wrappers
 	rm -rf ${D}/dev
 }
 
@@ -39,6 +38,7 @@ FILES_${PN} += "/usr/bin/* \
  
 FILES_${PN}-dev += "/usr/include/* \
 	/usr/lib/*.so \
+	/usr/lib/posix.wrappers \
  "
  
 FILES_${PN}-staticdev += "/usr/lib/*.a"
