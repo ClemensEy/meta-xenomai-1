@@ -7,10 +7,13 @@ DEPENDS = "virtual/kernel xenomai"
 PR = "r6"
 
 SRCREV = "286"
-SRC_URI = "file://rt_serial/uart_omap.c \
+SRC_URI = " \
+	file://rt_serial/uart_omap.c \
+	file://rt_serial/Correct-Misconfiguration-of-divisor-for-uart-speed.patch \
 	file://rt_serial/uart_omap.h \
 	file://rt_serial/Makefile \
-	file://uart.conf"
+	file://uart.conf \
+ "
 
 S = "${WORKDIR}/rt_serial"
 
